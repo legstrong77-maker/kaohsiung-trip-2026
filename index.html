@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>荒野南二團2026畢業蟻 高雄之旅</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="gsap-title">荒野南二團 <br><span class="highlight">2026畢業蟻 高雄之旅</span></h1>
+            <p class="gsap-subtitle">4/25 - 4/26 帶著孩子乘上風的大冒險</p>
+            <div class="scroll-indicator">
+                <span>往下滾動查看行程</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Day Toggle -->
+        <div class="day-toggle-wrapper gsap-fade-up">
+            <div class="day-toggle">
+                <button class="toggle-btn active" data-day="1">Day 1 (4/25)</button>
+                <button class="toggle-btn" data-day="2">Day 2 (4/26)</button>
+            </div>
+        </div>
+
+        <!-- Day 1 Itinerary -->
+        <section id="day1" class="itinerary-section active">
+            <div class="timeline">
+                <!-- Event 1 -->
+                <div class="timeline-item gsap-timeline-item">
+                    <div class="time">07:50</div>
+                    <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+                    <div class="content glass-card">
+                        <h3>台南火車站集合</h3>
+                        <p>大家早安！帶著雀躍的心情，準備出發囉！</p>
+                    </div>
+                </div>
+                <!-- Event 2 -->
+                <div class="timeline-item gsap-timeline-item">
+                    <div class="time">08:17 - 09:16</div>
+                    <div class="icon"><i class="fa-solid fa-train"></i></div>
+                    <div class="content glass-card">
+                        <h3>台鐵區間車</h3>
+                        <p class="transport-tag">台南車站 → 鼓山車站</p>
+                        <p>在車上與同伴聊天，欣賞窗外風景，約一小時車程。</p>
+                    </div>
+                </div>
+                <!-- Event 3 -->
+                <div class="timeline-item gsap-timeline-item">
+                    <div class="time">09:16 - 10:00</div>
+                    <div class="icon"><i class="fa-solid fa-train-tram"></i></div>
+                    <div class="content glass-card">
+                        <h3>轉乘輕軌與散步</h3>
+                        <p class="transport-tag">鼓山車站 → (C18 鼓山站) → (C14 哈瑪星站)</p>
+                        <p>體驗高雄特有的輕軌，下車後步行前往鼓山輪渡站，沿途充滿老街氛圍。</p>
+                    </div>
+                </div>
+                <!-- Event 4 -->
+                <div class="timeline-item gsap-timeline-item">
+                    <div class="time">10:00 - 10:40</div>
+                    <div class="icon"><i class="fa-solid fa-ferry"></i></div>
+                    <div class="content glass-card">
+                        <h3>搭乘渡輪</h3>
+                        <p class="transport-tag">鼓山輪渡站 → 旗津輪渡站</p>
+                        <p>迎著海風，欣賞高雄港的美麗景色，航程短暫卻充滿樂趣。</p>
+                    </div>
+                </div>
+                <!-- Event 5 (Qijin Core) -->
+                <div class="timeline-item gsap-timeline-item highlight-event">
+                    <div class="time">10:40 - 15:00</div>
+                    <div class="icon"><i class="fa-solid fa-bicycle"></i></div>
+                    <div class="content glass-card qijin-card">
+                        <h3>旗津單車大冒險與午餐</h3>
+                        <p>抵達旗津後，租借腳踏車或四輪電動單車，展開大冒險！</p>
+                        <ul class="qijin-route">
+                            <li><span>1</span> <strong>旗津老街</strong>：採買好吃點心與午餐。</li>
+                            <li><span>2</span> <strong>星空隧道</strong>：孩子會喜歡的涼爽聲光隧道！</li>
+                            <li><span>3</span> <strong>旗津海水浴場</strong>：踩沙、看海、玩水。</li>
+                            <li><span>4</span> <strong>彩虹教堂與海珍珠</strong>：網美打卡點，留下大合照。</li>
+                            <li><span>5</span> <strong>風車公園</strong>：廣大草地，適合奔跑放電與放風箏。</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Event 6 -->
+                <div class="timeline-item gsap-timeline-item">
+                    <div class="time">15:00 - 16:00</div>
+                    <div class="icon"><i class="fa-solid fa-ferry"></i></div>
+                    <div class="content glass-card">
+                        <h3>回程渡輪</h3>
+                        <p class="transport-tag">旗津輪渡站 → 鼓山輪渡站</p>
+                        <p>告別旗津，搭船返回市區。</p>
+                    </div>
+                </div>
+                <!-- Event 7 -->
+                <div class="timeline-item gsap-timeline-item">
+                    <div class="time">16:00 - 17:00</div>
+                    <div class="icon"><i class="fa-solid fa-shoe-prints"></i></div>
+                    <div class="content glass-card">
+                        <h3>移動至愛河</h3>
+                        <p class="transport-tag">步行/輕軌 → 愛河乘船處</p>
+                        <p>前往愛河畔，準備迎接夕陽與美麗的夜景。</p>
+                    </div>
+                </div>
+                <!-- Event 8 -->
+                <div class="timeline-item gsap-timeline-item">
+                    <div class="time">17:30 - 18:30</div>
+                    <div class="icon"><i class="fa-solid fa-ship"></i></div>
+                    <div class="content glass-card">
+                        <h3>愛之船遊河</h3>
+                        <p>搭乘愛之船，水上視角欣賞愛河兩岸璀璨燈光。</p>
+                    </div>
+                </div>
+                <!-- Event 9 -->
+                <div class="timeline-item gsap-timeline-item">
+                    <div class="time">18:30 - 21:00</div>
+                    <div class="icon"><i class="fa-solid fa-utensils"></i></div>
+                    <div class="content glass-card">
+                        <h3>晚餐與輕鬆遊</h3>
+                        <p class="transport-tag">鹽埕埔夜市周邊 + 駁二藝術特區</p>
+                        <p>在鹽埕區品嘗在地美食，於駁二特區夜晚的微風中散步放鬆。</p>
+                    </div>
+                </div>
+                <!-- Event 10 -->
+                <div class="timeline-item gsap-timeline-item">
+                    <div class="time">21:00</div>
+                    <div class="icon"><i class="fa-solid fa-bed"></i></div>
+                    <div class="content glass-card">
+                        <h3>回民宿休息</h3>
+                        <p>結束豐富的一天，好好休息充電！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day 2 Itinerary -->
+        <section id="day2" class="itinerary-section">
+            <div class="timeline">
+                <!-- Event 1 -->
+                <div class="timeline-item gsap-timeline-item">
+                    <div class="time">08:00</div>
+                    <div class="icon"><i class="fa-solid fa-mug-hot"></i></div>
+                    <div class="content glass-card">
+                        <h3>起床與早餐</h3>
+                        <p>吃飽飽，整理行李準備第二天的行程。</p>
+                    </div>
+                </div>
+                <!-- Event 2 -->
+                <div class="timeline-item gsap-timeline-item">
+                    <div class="time">09:00</div>
+                    <div class="icon"><i class="fa-solid fa-bus"></i></div>
+                    <div class="content glass-card">
+                        <h3>前往壽山動物園</h3>
+                        <p class="transport-tag">捷運鹽埕埔站 → (搭乘56號公車) → 壽山動物園</p>
+                        <p>搭乘直達公車前往孩子們最期待的動物園。</p>
+                    </div>
+                </div>
+                <!-- Event 3 -->
+                <div class="timeline-item gsap-timeline-item highlight-event">
+                    <div class="time">09:30 - 12:00</div>
+                    <div class="icon"><i class="fa-solid fa-hippo"></i></div>
+                    <div class="content glass-card">
+                        <h3>壽山動物園</h3>
+                        <p>觀賞各種可愛動物，動物園內還有親水廣場可以讓孩子們開心玩水 (記得準備替換衣物)！</p>
+                    </div>
+                </div>
+                <!-- Event 4 -->
+                <div class="timeline-item gsap-timeline-item">
+                    <div class="time">12:00 - 13:30</div>
+                    <div class="icon"><i class="fa-solid fa-burger"></i></div>
+                    <div class="content glass-card">
+                        <h3>午餐時間</h3>
+                        <p>離開動物園，前往餐廳享用美味午餐。</p>
+                    </div>
+                </div>
+                <!-- Event 5 -->
+                <div class="timeline-item gsap-timeline-item">
+                    <div class="time">13:30 - 15:00</div>
+                    <div class="icon"><i class="fa-solid fa-tree"></i></div>
+                    <div class="content glass-card">
+                        <h3>二二八和平紀念公園</h3>
+                        <p>超大坪數草地，適合孩子奔跑放電與拍大合照，享受午後時光。</p>
+                    </div>
+                </div>
+                <!-- Event 6 -->
+                <div class="timeline-item gsap-timeline-item">
+                    <div class="time">15:00 - 15:30</div>
+                    <div class="icon"><i class="fa-solid fa-subway"></i></div>
+                    <div class="content glass-card">
+                        <h3>準備返家</h3>
+                        <p class="transport-tag">鹽埕埔站(橘線) → 美麗島站 → 高雄車站(紅線)</p>
+                        <p>搭乘捷運前往高雄火車站。</p>
+                    </div>
+                </div>
+                <!-- Event 7 -->
+                <div class="timeline-item gsap-timeline-item">
+                    <div class="time">15:30 - 16:30</div>
+                    <div class="icon"><i class="fa-solid fa-train"></i></div>
+                    <div class="content glass-card">
+                        <h3>台鐵火車</h3>
+                        <p class="transport-tag">高雄車站 → 台南車站</p>
+                        <p>在火車上回味這兩天的趣事，約一小時抵達台南。</p>
+                    </div>
+                </div>
+                <!-- Event 8 -->
+                <div class="timeline-item gsap-timeline-item">
+                    <div class="time">16:30</div>
+                    <div class="icon"><i class="fa-solid fa-house"></i></div>
+                    <div class="content glass-card">
+                        <h3>抵達台南，滿載而歸！</h3>
+                        <p>帶著滿滿的快樂回憶，結束今年的荒野畢業蟻高雄之旅！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Map Section -->
+        <section class="map-section gsap-fade-up">
+            <h2 class="section-title">活動地圖總覽</h2>
+            <div class="glass-card map-container">
+                <div id="itinerary-map"></div>
+                <div class="map-caption">此地圖標示了主要活動地點與旗津單車推薦路線。可放大縮小探索！</div>
+            </div>
+        </section>
+
+        <!-- Itinerary Detail Modal -->
+        <div class="modal-overlay" id="detail-modal">
+            <div class="modal-content">
+                <button class="modal-close" id="modal-close-btn"><i class="fa-solid fa-xmark"></i></button>
+                <h2 id="modal-title" style="color: var(--primary);">行程標題</h2>
+                <div class="transport-tag" id="modal-tag" style="display:none; margin-top:10px;"></div>
+                <div id="modal-desc" style="margin-top:15px; font-size:1.1rem; line-height: 1.8;"></div>
+                <div id="modal-map"></div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>為荒野南二團2026畢業蟻專屬設計</p>
+    </footer>
+
+    <!-- GSAP & Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
